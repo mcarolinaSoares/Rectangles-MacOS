@@ -18,4 +18,3 @@ extension RectangleModel {
     var xf: Int { return self.x + self.w }
     var yf: Int { return self.y + self.h }
 }
-

@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		F1D8B7052BED9B8400B47819 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D8B7042BED9B8400B47819 /* AppDelegate.swift */; };
-		F1D8B7072BED9B8400B47819 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D8B7062BED9B8400B47819 /* ViewController.swift */; };
 		F1D8B7092BED9B8500B47819 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1D8B7082BED9B8500B47819 /* Assets.xcassets */; };
 		F1D8B71A2BED9BA700B47819 /* RectanglesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D8B7192BED9BA700B47819 /* RectanglesTests.swift */; };
 		F1D8B7212BEE263200B47819 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D8B7202BEE263200B47819 /* main.swift */; };
@@ -34,7 +33,6 @@
 /* Begin PBXFileReference section */
 		F1D8B7012BED9B8400B47819 /* Rectangles.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rectangles.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1D8B7042BED9B8400B47819 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F1D8B7062BED9B8400B47819 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F1D8B7082BED9B8500B47819 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F1D8B70D2BED9B8500B47819 /* Rectangles.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Rectangles.entitlements; sourceTree = "<group>"; };
 		F1D8B7172BED9BA700B47819 /* RectanglesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RectanglesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -92,7 +90,6 @@
 				F1D8B7272BEE272300B47819 /* DataSources */,
 				F1D8B7262BEE271C00B47819 /* Models */,
 				F1D8B7042BED9B8400B47819 /* AppDelegate.swift */,
-				F1D8B7062BED9B8400B47819 /* ViewController.swift */,
 				F1D8B7082BED9B8500B47819 /* Assets.xcassets */,
 				F1D8B70D2BED9B8500B47819 /* Rectangles.entitlements */,
 				F1D8B7202BEE263200B47819 /* main.swift */,
@@ -239,7 +236,6 @@
 				F1D8B7302BEE281C00B47819 /* MainLogicController.swift in Sources */,
 				F1D8B7252BEE271600B47819 /* MyFileManager.swift in Sources */,
 				F1D8B7232BEE269E00B47819 /* MainWindow.swift in Sources */,
-				F1D8B7072BED9B8400B47819 /* ViewController.swift in Sources */,
 				F1D8B72B2BEE278500B47819 /* MainModel.swift in Sources */,
 				F1D8B7292BEE277900B47819 /* RectangleModel.swift in Sources */,
 				F1D8B7052BED9B8400B47819 /* AppDelegate.swift in Sources */,

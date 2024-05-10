@@ -46,6 +46,7 @@ class MainWindow: NSWindow {
     }
     
     func setupToolbar() {
+        
         let toolbar = NSToolbar(identifier: "toolbar")
         toolbar.delegate = self
         toolbar.displayMode = .iconAndLabel
@@ -55,14 +56,19 @@ class MainWindow: NSWindow {
     }
 }
 
+
+// MARK: NSToolbarDelegate
+
 extension MainWindow: NSToolbarDelegate {
     
     func toolbarAllowedItemIdentifiers(_ toolbar: NSToolbar) -> [NSToolbarItem.Identifier] {
-        return [.openFile] // Add your toolbar item identifiers here
+        
+        return [.openFile]
     }
     
     func toolbarDefaultItemIdentifiers(_ toolbar: NSToolbar) -> [NSToolbarItem.Identifier] {
-        return [.openFile] // Define the default order of toolbar items
+        
+        return [.openFile]
     }
     
     func toolbar(_ toolbar: NSToolbar,
@@ -70,13 +76,16 @@ extension MainWindow: NSToolbarDelegate {
                  willBeInsertedIntoToolbar flag: Bool) -> NSToolbarItem? {
         
         if itemIdentifier == .openFile {
+            
             let openItem = NSToolbarItem(itemIdentifier: itemIdentifier)
             openItem.label = "Open"
             openItem.action = #selector(MyFileManager.openFile(_:))
             openItem.target = self.myFileManager
             openItem.image = NSImage(named: NSImage.folderName)
+            
             return openItem
         }
+        
         return nil
     }
 }

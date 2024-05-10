@@ -96,6 +96,9 @@ class MainLogicController {
     }
 }
 
+
+// MARK: RectanglesDataSourceProtocol
+
 extension MainLogicController: RectanglesDataSourceProtocol {
     
     func getRectangles(rectangles: [RectangleModel]) {

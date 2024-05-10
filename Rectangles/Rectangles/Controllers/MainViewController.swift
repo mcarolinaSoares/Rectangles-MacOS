@@ -9,14 +9,6 @@ import AppKit
 
 class MainViewController: NSViewController {
     
-    let scrollView: NSScrollView = {
-        let scrollView = NSScrollView()
-        scrollView.hasVerticalScroller = true
-        scrollView.hasHorizontalScroller = true
-        scrollView.autohidesScrollers = true
-        return scrollView
-    }()
-    
     let textInputView: NSTextView = {
         let textView = NSTextView()
         textView.isEditable = false
@@ -54,10 +46,6 @@ class MainViewController: NSViewController {
     override func loadView() {
         
         self.view = NSView()
-        self.view.wantsLayer = true
-        self.view.layer?.backgroundColor = NSColor.red.cgColor
-        
-        self.scrollView.documentView = self.view
         
         self.view.addSubview(self.textInputView)
         self.view.addSubview(self.textOutputView)
@@ -68,13 +56,7 @@ class MainViewController: NSViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-    
-    override var representedObject: Any? {
-        didSet {
-            // Update the view, if already loaded.
-        }
-    }
-    
+
     func defineConstraints() {
         
         NSLayoutConstraint.activate([
@@ -82,7 +64,7 @@ class MainViewController: NSViewController {
             self.textInputView.bottomAnchor.constraint(equalTo: self.textOutputView.topAnchor),
             self.textInputView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor),
             self.textInputView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor),
-            self.textInputView.heightAnchor.constraint(equalToConstant: 160)
+            self.textInputView.heightAnchor.constraint(equalToConstant: 170)
         ])
         
         NSLayoutConstraint.activate([
@@ -141,6 +123,9 @@ class MainViewController: NSViewController {
         self.configureOutputText()
     }
 }
+
+
+// MARK: MainLogicControllerProtocol
 
 extension MainViewController: MainLogicControllerProtocol {
     
